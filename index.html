@@ -50,14 +50,24 @@
     <div class="max-w-6xl mx-auto grid lg:grid-cols-5 gap-3 sm:gap-5 lg:gap-6 lg:min-h-[calc(100vh-4rem)]">
 
         <!-- ======== LEFT CARD ======== -->
-        <div class="lg:col-span-3 bg-white rounded-[1.75rem] p-7 sm:p-10 lg:p-12 flex flex-col justify-between">
+        <div class="lg:col-span-3 bg-white rounded-[1.75rem] overflow-hidden flex flex-col justify-between">
+
+            <!-- Cover image with title overlay -->
+            <div class="relative">
+                <img src="images/macropad.avif" alt="Macro pad" class="w-full aspect-[16/9] object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-7 sm:p-10 lg:p-12 pb-6 sm:pb-8">
+                    <h1 class="text-[2.5rem] sm:text-5xl lg:text-[3.5rem] font-black text-white leading-[1.08]">
+                        Build Your Own<br>Macro Pad
+                    </h1>
+                </div>
+            </div>
+
+            <!-- Content below cover -->
+            <div class="p-7 sm:p-10 lg:p-12 pt-5 sm:pt-6 flex flex-col flex-1 justify-between">
 
             <!-- Top -->
             <div>
-
-                <h1 class="text-[2.5rem] sm:text-5xl lg:text-[3.5rem] font-black text-black leading-[1.08] mb-5">
-                    Build Your Own<br>Macro Pad
-                </h1>
 
                 <div class="flex flex-col gap-2 mb-8 text-sm text-black/70">
                     <a href="https://luma.com/t77yvole" target="_blank" rel="noopener"
@@ -69,7 +79,7 @@
                             <path d="M8 2v4" />
                             <path d="M3 10h18" />
                         </svg>
-                        Sun, 17 May &middot; 2 &ndash; 6 PM
+                        Sun, 17 May &middot; 2 &ndash; 6 PM &middot; RSVP on Luma
                     </a>
                     <a href="https://maps.app.goo.gl/JFA4SN8tPxCFAywa9" target="_blank" rel="noopener"
                         class="inline-flex items-center gap-2 hover:text-brand transition-colors w-fit">
@@ -160,6 +170,7 @@
                         </div>
                     </a>
                 </div>
+            </div>
             </div>
         </div>
 
